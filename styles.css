@@ -1,0 +1,71 @@
+body {
+  background: rgb(156, 151, 187);
+}
+
+#logo {
+  height: 100%;
+  margin: 0 5px 0 0;
+}
+
+.container {
+  padding: 15px;
+}
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portfolio-card {
+  background: white;
+  margin: 15px 0px;
+  max-height: 540px;
+  border: none;
+  box-shadow: 2px 4px 8px #6d6d6d;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card-image {
+  max-height: 40px;
+  margin: 0;
+  padding: 0;
+  background: black;
+  object-fit: cover;
+}
+
+@media (min-width: 320px) {
+  .card-image {
+    max-height: 45px;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-image {
+    max-height: 270px;
+  }
+}
+.card-text {
+  max-height: 270px;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+}
+
+.card-text .card-title {
+  padding: 0;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-text .card-blurb {
+  padding: 0;
+  margin: 0 15px 15px 15px;
+  max-height: 165px;
+  overflow: clip;
+  text-overflow: ellipsis;
+}
